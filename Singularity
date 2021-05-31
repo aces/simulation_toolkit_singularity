@@ -2,7 +2,6 @@ Bootstrap: docker
 From: nistmni/minc-toolkit-min:1.9.16
 
 %files
-    deformation.pl /usr/local/bin/deformation.pl
     deformation_2.pl /usr/local/bin/deformation_2.pl
 
 %post
