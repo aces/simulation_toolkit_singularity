@@ -1,7 +1,11 @@
 # Deformation field
 
-This PERL script is a wrapper that is calling sequence of commands for generating deformation fields scrips
+To set up software you need fo these analysis, please follow: https://github.com/aces/simulation_toolkit_singularity/blob/main/Singularity
+
+
+You can use this Perl wrapper or write your own script to generate deformation fields as described in
 https://wiki.mouseimaging.ca/display/MICePub/Generating+deformation+fields
+
 Source code for deformation pipeline and dependencies (MINC):
 https://github.com/Mouse-Imaging-Centre/generate_deformation_fields
 
