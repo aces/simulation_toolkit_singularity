@@ -24,7 +24,7 @@ From: nistmni/minc-toolkit-min:1.9.16
     python setup.py build_ext --inplace
     python setup.py install --prefix=/opt/dfg --install-lib=/usr/local/lib/python2.7/dist-packages
 
-    chmod +x /usr/local/bin/deformation.pl
+  
     chmod +x /usr/local/bin/deformation_2.pl
 
 %test
