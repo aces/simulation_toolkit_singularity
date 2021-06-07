@@ -72,4 +72,4 @@ https://github.com/Mouse-Imaging-Centre/generate_deformation_fields
     
 4. Example Data, Scripts and Statistical analysis used in our Frontier's Paper can be found here: https://github.com/aces/simulation_toolkit_statistics
 
-5. All these tools and data needed will be made available via CBRAIN. To learn more, please contact us at cbrain-support.mni@mcgill.ca. In the subjevt line, pleasee be sure to write SIMULATION TOOLKIT.
+5. All these tools and data needed will be made available via CBRAIN. To learn more, please contact us at cbrain-support.mni@mcgill.ca. In the subject line, pleasee be sure to write SIMULATION TOOLKIT.
