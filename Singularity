@@ -36,13 +36,13 @@ From: nistmni/minc-toolkit-min:1.9.16
     fi
 
 %labels
-    Author Naj Nurani
+    Author Naj Mahani
     Version v0.0.1
 
 %help
-    This is a brain deformation field computation script that consists from a perl wrapper and a software
-    This PERL script is a wrapper that is calling sequence of commands for generating deformation fields scrips
-    from      https://wiki.mouseimaging.ca/display/MICePub/Generating+deformation+fields
+    This is a brain deformation field computation script that consists of a perl wrapper and the software used to apply local deformations.
+    This Perl script calls a sequence of commands for generating deformation fields using
+    https://wiki.mouseimaging.ca/display/MICePub/Generating+deformation+fields
 
     usage example is
 
