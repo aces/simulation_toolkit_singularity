@@ -10,7 +10,7 @@ To set up software you need the following:
 2. Obtain data from 
 https://ida.loni.usc.edu/collaboration/access/appLicense.jsp;jsessionid=B0278AF5FD413E9AC14512DF841FFCA4/ 
 
-3. Run deformation pipeline"
+3. Run deformation pipeline
 
 Usage
 Usage: deformation.pl -input <.mnc> -output <outputdir> [options] 
@@ -28,7 +28,7 @@ Mandatory options:
     
 Other options:
     
-    -blur_determinant     Blurring kernel size for blurring deformation determinant blurring kernel 0-1
+    -blur_determinant     Blurring kernel size for blurring deformation determinant blurring kernel
     
     -error                Specify the amount of error that is allowed between the specified determinant and the final determinant (per voxel) [default =0.00001]
     
@@ -37,7 +37,7 @@ Other options:
 
 Example:
     
-  ./deformation.pl -input ICBM_00100_t1_final.mnc -output Debugging_Folder -deformation_ratio 0.6 -coordinate 70 100 70 10 10 10 -tolerance_space 4 -blur_determinant 0.25  -error 0.00001  -iteration 100 
+  ./deformation.pl -input ICBM_00100_t1_final.mnc -output Debugging_Folder -deformation_ratio 0.6 -coordinate 70 100 70 10 10 10 -tolerance_space 4 -blur_determinant 2.5  -error 0.00001  -iteration 100 
 
 
 The locally-deformed output file name includes input parameters to simplify creating GLM matrices for statistical analysis. 
@@ -72,4 +72,4 @@ https://github.com/Mouse-Imaging-Centre/generate_deformation_fields
     
 4. Example Data, Scripts and Statistical analysis used in our Frontier's Paper can be found here: https://github.com/aces/simulation_toolkit_statistics
 
-5. All these tools and data needed will be made available via CBRAIN. To learn more, please contact us at cbrain-support.mni@mcgill.ca. In the subject line, pleasee be sure to write SIMULATION TOOLKIT.
+5. All these tools and data needed will be made available via CBRAIN. To learn more, please contact us at cbrain-support.mni@mcgill.ca. In the subject line, please be sure to write SIMULATION TOOLKIT.

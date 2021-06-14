@@ -2,7 +2,7 @@ Bootstrap: docker
 From: nistmni/minc-toolkit-min:1.9.16
 
 %files
-    deformation_2.pl /usr/local/bin/deformation_2.pl
+    deformation.pl /usr/local/bin/deformation.pl
 
 %post
     apt-get update && apt-get install -y build-essential gfortran automake libtool git
@@ -24,16 +24,7 @@ From: nistmni/minc-toolkit-min:1.9.16
     python setup.py build_ext --inplace
     python setup.py install --prefix=/opt/dfg --install-lib=/usr/local/lib/python2.7/dist-packages
 
-  
-    chmod +x /usr/local/bin/deformation_2.pl
-
-%test
-    grep -q NAME=\"Ubuntu\" /etc/os-release
-    if [ $? -eq 0 ]; then
-        echo "Container base is Ubuntu as expected."
-    else
-        echo "Container base is not Ubuntu."
-    fi
+    chmod +x /usr/local/bin/deformation.pl
 
 %labels
     Author Naj Mahani
@@ -46,13 +37,13 @@ From: nistmni/minc-toolkit-min:1.9.16
 
     usage example is
 
-    deformation_2.pl -input ICBM_00100_t1_final.mnc        `# this could be any anatomical minc file`\
+    deformation.pl -input ICBM_00100_t1_final.mnc        `# this could be any anatomical minc file`\
                       -output dummy_hoho \
                       -deformation_ratio 0.6 \
                       -coordinate 70 100 70 10 10 10 \
-                      -tolerance_space 4 `# default`\
-                      -blur_determinant 0.25 `# default`\
+                      -tolerance_space 4 \
+                      -blur_determinant 2.5 \
                       -error 0.00001 \
                       -iteration 100
 
-the text in backtick are comments, can be omitted
+
